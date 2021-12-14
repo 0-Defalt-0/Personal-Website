@@ -1,0 +1,168 @@
+@font-face {
+  font-family: Hacked;
+  src: url(https://hackedfont.com/HACKED.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  /*   background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/Untitled\ design.png"); */
+  /*   background-size: 1556px 966px;
+  background-position: 185px 40px; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+#logo {
+  justify-content: flex-start;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: monospace;
+  color: green;
+  margin-top: 12px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: right;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.navbar ul li {
+  text-decoration: none !important;
+  font-size: 20px;
+  margin-left: 27px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: green;
+  font-family: monospace;
+}
+
+.navbar a:hover {
+  animation-name: navbar;
+  animation-duration: 5s;
+}
+
+.headline {
+  font-size: 8px;
+  color: green;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-primary {
+  animation-name: moveinLeft;
+  animation-duration: 2s;
+}
+
+.header-primary2 {
+  animation-name: moveinRight;
+  animation-duration: 2s;
+}
+
+.header-primary3 {
+  animation-name: moveinLeft;
+  animation-duration: 2s;
+}
+
+.tagline {
+  color: white;
+  font-size: 20px;
+  animation-name: moveUp;
+  animation-duration: 2s;
+}
+
+footer {
+  border-top: 2px dashed green;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  color: green;
+  font-family: monospace;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+/*animations*/
+@keyframes moveinLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveinRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes navbar {
+  0% {
+	  
+  }
+
+
+  100% {
+    font-size:32px;
+  }
+}
